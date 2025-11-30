@@ -99,7 +99,7 @@ usage() {
     echo -e "    --hard-klipper-restart   Use Hard restart for Klipper."
     echo -e "    --force-restart, -fr     Force restart services."
     echo -e "    --verbose, -v            Enable verbose mode for detailed output."
-    echo -e "    --help, -h               Display this help message."
+    echo -e "    --help                   Display this help message."
     echo -e ""
     echo -e "${RED}Example:${NC} $0 --host 192.168.1.100 --skip-restart --verbose"
 }

@@ -155,7 +155,7 @@ else
     echo; echo -e "${YELLOW}Printer is already in-sync${NC}"
 fi
 
-if [ "$CHANGED" -eq 1 ] || [ "$FORCE_RESTART" -eq 1 ] && [ "$SKIP_RESTART" -eq 0 ]; then
+if ([ "$CHANGED" -eq 1 ] || [ "$FORCE_RESTART" -eq 1 ]) && [ "$SKIP_RESTART" -eq 0 ]; then
     echo; echo -e "${GREEN}Restarting services...${NC}\n"
     
     run_service "Moonraker" "Stopping"      1   "$SKIP_MOON_RESTART" \
